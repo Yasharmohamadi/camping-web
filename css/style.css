@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'IranYekanBold';
+    src: url(../fonts/iranyekanwebblackfanum.ttf);
+}
+
+@font-face {
+    font-family: 'IranYekanLight';
+    src: url(../fonts/iranyekanwebregularfanum.ttf);
+}
+
+h1 {
+    font-family: 'IranYekanMedium';
+    
+}
