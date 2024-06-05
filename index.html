@@ -3,14 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camping Web</title>
+    <title>Camping</title>
     <link rel="icon" type="image/png" href="./svgs/logo.svg">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font-face.css">
+    <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
-<body>
-
+<body dir="rtl">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a class="app-logo" href="#">
+                    <img class="app-logo__img" src="./svgs/logo.svg" alt="Camping Logo">
+                </a>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__item-link" href="#">خانه</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__item-link" href="#">مقصد</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__item-link" href="#">نزدیکان من</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__item-link" href="#">رویداد ها</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__item-link" href="#">گالری</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__item-link" href="#">درباره ما</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__item-link" href="#">ارتباط با ما</a>
+                    </li>
+                </ul>
+                <!-- here we create mobile menu construct -->
+                <div class="mobile-nav">
+                    <ul class="mobile-menu">
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__item-link" href="#">خانه</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__item-link" href="#">مقصد</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__item-link" href="#">نزدیکان من</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__item-link" href="#">رویداد ها</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="mobile-menu__item-link" href="#">گالری</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__item-link" href="#">درباره ما</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__item-link" href="#">ارتباط با ما</a>
+                        </li>
+                    </ul>
+                    <div class="mobile__links">
+                        <a class="mobile__link" href="#">Sign up</a>
+                        <a class="mobile__link mobile__link--border" href="#">Sign in</a>
+                    </div>
+                </div>
+                
+                <div class="nav__links">
+                    <a class="nav__link" href="#">Sign up</a>
+                    <a class="nav__link nav__link--border" href="#">Sign in</a>
+                </div>
+                <div class="nav__btn">
+                    <span class="nav__btn-link"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
 </body>
 </html>

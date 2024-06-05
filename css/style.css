@@ -1,4 +1,21 @@
-h1 {
-    font-family: 'Iran Yekan Light';
-    
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; /* 10px */
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Iran Yekan Light";
+	line-height: 1.6;
+	font-size: 1.6rem;
+}
+
+/* reset */
+a {
+    text-decoration: none;
 }
