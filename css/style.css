@@ -103,7 +103,6 @@ a {
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	transition: all 0.2s ease;
 }
 
 /* .nav__btn:hover {
@@ -142,4 +141,15 @@ a {
 }
 .nav__btn-line::before {
 	top: 0.8rem;
+}
+
+.nav__btn--open .nav__btn-line {
+	background-color: transparent;
+}
+.nav__btn--open .nav__btn-line::after {
+	transform: translateY(0.8rem) rotate(45deg);
+	
+}
+.nav__btn--open .nav__btn-line::before {
+	transform: translateY(-0.8rem) rotate(-45deg);
 }
