@@ -52,6 +52,13 @@ a {
 	justify-content: center;
 }
 
+
+/*
+===============================
+			App Logo
+===============================
+*/
+
 .app-logo {
 	width: 5.5rem;
 	height: 5.5rem;
@@ -61,6 +68,12 @@ a {
 .app-logo__img {
 	width: 100%;
 }
+
+/*
+===============================
+			MAIN MENU
+===============================
+*/
 
 .menu {
 	display: none;
@@ -103,6 +116,11 @@ a {
 	transform: rotate(-25deg);
 }
 
+/*
+===============================
+			Mobile MENU
+===============================
+*/
 
 .mobile-nav {
 	/* display: none; */
@@ -144,6 +162,12 @@ a {
 .mobile__link--border {
 }
 
+/*
+===============================
+			Sign in/up Buttons
+===============================
+*/
+
 .nav__links {
 	display: none;
 	font-weight: bold;	
@@ -167,6 +191,12 @@ a {
 	color: var(--dark);
 
 }
+
+/*
+===============================
+			mobile MENU button
+===============================
+*/
 
 .nav__btn {
 	width: 5.5rem;
