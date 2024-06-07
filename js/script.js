@@ -6,7 +6,6 @@ menuBtn.addEventListener('click', () => {
 
     let btnClass = [...menuBtn.classList]
 
-    console.log(btnClass);
     if (btnClass.includes('nav__btn--open')) {
         mobileNav.style.right = '0'
     } else {
