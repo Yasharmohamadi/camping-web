@@ -1,3 +1,10 @@
+@media screen and (max-width: 450px) {
+	.header-content__title {
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+}
+
 @media screen and (min-width: 576px) {
 	
 }
@@ -14,6 +21,10 @@
 @media screen and (min-width: 992px) {
     .nav__links {
         display: block;
+    }
+    .header-content__text {
+        max-width: 40rem;
+
     }
     
 }

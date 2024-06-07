@@ -283,16 +283,19 @@ MAIN MENU
 .header-content {
 	color: var(--white);
 	text-align: center;
+	margin-top: 5rem;
 }
 .header-content__title {
-	font-size: 5rem;
+	font-size: 6rem;
+	line-height: 8rem;
 	font-family: "Iran Yekan Bold";
-	margin-bottom: 3rem;
+	margin: 0 auto 3rem auto;
+	max-width: 35rem;
 }
 .header-content__text {
 	font-size: 1.8rem;
-	margin-bottom: 2rem;
-
+	max-width: 30rem;
+	margin: 0 auto 2rem auto;
 }
 
 .header-content__btn {
