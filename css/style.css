@@ -1,6 +1,7 @@
 :root {
 	--orange: #e76f51;
 	--white: #fff;
+	--grey: #D2D2D2;
 }
 
 html {
@@ -41,12 +42,19 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 2rem 0;
+	padding: 4rem 0;
+}
+
+.nav_right-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .app-logo {
 	width: 5.5rem;
 	height: 5.5rem;
+	margin-left: 3rem;
 }
 
 .app-logo__img {
@@ -55,12 +63,16 @@ a {
 
 .menu {
 	display: none;
+	flex-direction: row;
+	font-size: 2rem;
 }
 
 .menu__item {
+	margin-left: 2rem;
 }
 
 .menu__item-link {
+	color: var(--grey)
 }
 
 .mobile-nav {
@@ -104,13 +116,20 @@ a {
 }
 
 .nav__links {
+	display: none;
+	font-weight: bold;	
 }
 
 .nav__link {
-	display: none;
+	color: var(--white);
+	margin-right: 2rem;
 }
 
 .nav__link--border {
+	border: 1px solid var(--white);
+	padding: 1rem 3rem;
+	border-radius: 2rem;
+
 }
 
 .nav__btn {
