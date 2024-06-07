@@ -1,8 +1,8 @@
 :root {
 	--orange: #e76f51;
 	--white: #fff;
-	--grey: #D2D2D2;
-	--dark: #3B3735
+	--grey: #d2d2d2;
+	--dark: #3b3735;
 }
 
 html {
@@ -27,16 +27,29 @@ a {
 	text-decoration: none;
 }
 
+/* component */
+.btn {
+	/* padding: 1.5rem 5rem; */
+	width: 20rem;
+	height: 5rem;
+	outline: none;
+	border-radius: 10rem;
+	font-size: 2rem;
+	font-family: "Iran Yekan Bold";
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+/* app style */
 .header {
 	background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
 		url("../images/header-bg.jpg");
 	width: 100%;
-	min-height: 70rem;
-
+	min-height: 80vh;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	/* border-radius: 0 0 7rem 7rem; */
+	border-radius: 0 0 7rem 7rem;
 }
 
 .nav {
@@ -51,7 +64,6 @@ a {
 	align-items: center;
 	justify-content: center;
 }
-
 
 /*
 ===============================
@@ -71,7 +83,7 @@ a {
 
 /*
 ===============================
-			MAIN MENU
+MAIN MENU
 ===============================
 */
 
@@ -102,7 +114,7 @@ a {
 	z-index: 5;
 }
 .menu__item-link--active::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 1.5rem;
 	right: 0;
@@ -170,7 +182,7 @@ a {
 
 .nav__links {
 	display: none;
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 .nav__link {
@@ -183,13 +195,11 @@ a {
 	padding: 1rem 3rem;
 	border-radius: 2rem;
 	transition: all 0.2s ease;
-
 }
 
 .nav__link--border:hover {
 	background: var(--white);
 	color: var(--dark);
-
 }
 
 /*
@@ -252,8 +262,54 @@ a {
 }
 .nav__btn--open .nav__btn-line::after {
 	transform: translateY(0.8rem) rotate(45deg);
-	
 }
 .nav__btn--open .nav__btn-line::before {
 	transform: translateY(-0.8rem) rotate(-45deg);
+}
+
+/*
+===============================
+			main header
+===============================
+*/
+
+.header__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 50rem;
+}
+
+.header-content {
+	color: var(--white);
+	text-align: center;
+}
+.header-content__title {
+	font-size: 5rem;
+	font-family: "Iran Yekan Bold";
+	margin-bottom: 3rem;
+}
+.header-content__text {
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+
+}
+
+.header-content__btn {
+	border: 1px solid var(--orange);
+	background: var(--orange);
+}
+
+.header-content__btn:hover {
+	border: 1px solid var(--orange);
+	background: var(--white);
+}
+
+.header-content__btn:hover > .header-content__btn__link {
+	color: var(--orange);
+}
+
+.header-content__btn__link {
+	display: block;
+	color: var(--white);
 }
