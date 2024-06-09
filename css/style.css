@@ -154,13 +154,29 @@ MAIN MENU
 .mobile-menu__item {
 	margin-bottom: 0.5rem;
 	position: relative;
+	transition: all 0.2s ease;
 }
-.mobile-menu__item:hover > .mobile-menu__item::before {
+.mobile-menu__item--active, .mobile-menu__item:hover {
+	padding-right: 2.5rem;
+}
+
+
+.mobile-menu__item::before, .mobile-menu__item--active::before {
 	content: "";
-	background: #000;
-	width: 1rem;
-	height: 1rem;
+	background: var(--white);
+	width: 0;
+	height: 0.5rem;
+	border-radius: 2rem;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
 	position: absolute;
+	transition: all 0.2s ease;
+}
+
+.mobile-menu__item:hover::before, .mobile-menu__item--active::before {
+	width: 2rem;
 }
 
 .mobile-menu__item-link {
