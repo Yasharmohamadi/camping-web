@@ -10,7 +10,7 @@
 }
 
 @media screen and (min-width: 768px) {
-	.nav__btn {
+	.nav__btn, .mobile-nav {
         display: none;
     }
     .menu {

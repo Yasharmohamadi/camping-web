@@ -95,7 +95,7 @@ MAIN MENU
 
 .menu__item {
 	margin-left: 0.5rem;
-	padding: 1rem;
+	padding: 0.5rem;
 	/* background: #000; */
 }
 
@@ -153,6 +153,14 @@ MAIN MENU
 
 .mobile-menu__item {
 	margin-bottom: 0.5rem;
+	position: relative;
+}
+.mobile-menu__item:hover > .mobile-menu__item::before {
+	content: "";
+	background: #000;
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
 }
 
 .mobile-menu__item-link {
@@ -169,9 +177,19 @@ MAIN MENU
 	color: var(--white);
 	flex-grow: 1;
 	text-align: center;
+	transition: all 0.1s ease;
 }
 
-.mobile__link--border {
+.mobile__link__right {
+	border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.mobile__link__left {
+	border-radius: 1.5rem 0 0 1.5rem;
+}
+.mobile__link__right:hover, .mobile__link__left:hover  {
+	transform: translateY(-5px);
+	box-shadow: 0 5px 0 var(--white);
 }
 
 /*
