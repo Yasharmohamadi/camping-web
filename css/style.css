@@ -151,6 +151,15 @@ MAIN MENU
 	margin-top: 2rem;
 }
 
+.mobile-nav__title {
+	font-family: "Iran Yekan Bold";
+	font-size: 3rem;
+	border-bottom: 1px solid var(--white);
+	color: var(--white);
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
 .mobile-menu__item {
 	margin-bottom: 0.5rem;
 	position: relative;
@@ -184,6 +193,7 @@ MAIN MENU
 }
 
 .mobile__links {
+	margin-top: 2rem;
 	display: flex;
 }
 
