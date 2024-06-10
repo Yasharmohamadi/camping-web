@@ -3,6 +3,9 @@
 	--white: #fff;
 	--grey: #d2d2d2;
 	--dark: #3b3735;
+	--app-bg: #faf4f2;
+	--font-bold: "Iran Yekan Bold";
+	--font-light: "Iran Yekan Light";
 }
 
 html {
@@ -17,9 +20,10 @@ html {
 }
 
 body {
-	font-family: "Iran Yekan Light";
+	font-family: var(--font-light);
 	line-height: 1.6;
 	font-size: 1.6rem;
+	background: var(--app-bg);
 }
 
 /* reset */
@@ -35,7 +39,7 @@ a {
 	outline: none;
 	border-radius: 10rem;
 	font-size: 2rem;
-	font-family: "Iran Yekan Bold";
+	font-family: var(--font-bold);
 	cursor: pointer;
 	transition: all 0.2s ease;
 }
@@ -45,7 +49,7 @@ a {
 	background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
 		url("../images/header-bg.jpg");
 	width: 100%;
-	min-height: 80vh;
+	min-height: 90vh;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -152,7 +156,7 @@ MAIN MENU
 }
 
 .mobile-nav__title {
-	font-family: "Iran Yekan Bold";
+	font-family: var(--font-bold);
 	font-size: 3rem;
 	border-bottom: 1px solid var(--white);
 	color: var(--white);
@@ -165,12 +169,13 @@ MAIN MENU
 	position: relative;
 	transition: all 0.2s ease;
 }
-.mobile-menu__item--active, .mobile-menu__item:hover {
+.mobile-menu__item--active,
+.mobile-menu__item:hover {
 	padding-right: 2.5rem;
 }
 
-
-.mobile-menu__item::before, .mobile-menu__item--active::before {
+.mobile-menu__item::before,
+.mobile-menu__item--active::before {
 	content: "";
 	background: var(--white);
 	width: 0;
@@ -184,7 +189,8 @@ MAIN MENU
 	transition: all 0.2s ease;
 }
 
-.mobile-menu__item:hover::before, .mobile-menu__item--active::before {
+.mobile-menu__item:hover::before,
+.mobile-menu__item--active::before {
 	width: 2rem;
 }
 
@@ -213,7 +219,8 @@ MAIN MENU
 .mobile__link__left {
 	border-radius: 1.5rem 0 0 1.5rem;
 }
-.mobile__link__right:hover, .mobile__link__left:hover  {
+.mobile__link__right:hover,
+.mobile__link__left:hover {
 	transform: translateY(-5px);
 	box-shadow: 0 5px 0 var(--white);
 }
@@ -332,7 +339,7 @@ MAIN MENU
 .header-content__title {
 	font-size: 6rem;
 	line-height: 8rem;
-	font-family: "Iran Yekan Bold";
+	font-family: var(--font-bold);
 	margin: 0 auto 3rem auto;
 	max-width: 35rem;
 }
@@ -359,4 +366,55 @@ MAIN MENU
 .header-content__btn__link {
 	display: block;
 	color: var(--white);
+}
+
+/*
+===============================
+			main
+===============================
+*/
+
+.main {
+}
+
+/*
+===============================
+			services section
+===============================
+*/
+
+.services {
+	margin-top: -15rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.services__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 36rem;
+	height: 26rem;
+	padding: 0 4rem;
+	border-radius: 3rem;
+	background: var(--white);
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.services__item-svg {
+}
+
+.services__item-title {
+	font-family: var(--font-bold);
+	font-size: 2rem;
+	margin: 2.5rem 0 1rem 0;
+}
+
+.services__item-caption {
+	font-family: var(--font-light);
 }
