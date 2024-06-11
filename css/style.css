@@ -410,9 +410,6 @@ MAIN MENU
 	text-align: center;
 }
 
-.services__item-svg {
-}
-
 .services__item-title {
 	font-family: var(--font-bold);
 	font-size: 2rem;
@@ -431,16 +428,117 @@ MAIN MENU
 
 .destinations {
 	text-align: center;
-	padding: 7rem;
+	padding: 7rem 0;
 	color: var(--dark);
-}
-.destinations__img {
 }
 
 .destinations__title {
 	font-family: var(--font-bold);
 	font-size: 2.5rem;
 	margin: 1rem auto 3rem auto;
+}
+
+
+.destinations__places {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -1rem;
+	margin-right: -1rem;
+	
+}
+.place {
+	background: var(--white);
+	padding: 3rem;
+	border-radius: 2rem;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+	width: 32rem;
+	flex-grow: 1;
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
+.place__banner {
+	position: relative;
+	margin-bottom: 3rem;
+	
+}
+.place__banner-img {
+	border-radius: 2rem;
+	width: 100%;
+	
+}
+.place__banner-like {
+	background: var(--white);
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	width: 3.5rem;
+	height: 3.5rem;
+	padding-bottom: 2px;
+	border-radius: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.place__banner-like-img {
+	
+}
+.place__banner-price {
+	background: var(--white);
+	position: absolute;
+	bottom: -0.5rem;
+	right: 0;
+	left: 0;
+
+	width: 20rem;
+	height: 3.5rem;
+	padding-bottom: 2px;
+	border-radius: 1rem;
+	margin: 0 auto;
+	/* display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer; */
+	
+}
+.place__banner-price__number {
+	font-family: var(--font-bold);
+	font-size: 2rem;
+}
+.place__banner-price__unit {
+	font-family: var(--font-bold);
+	
+}
+.place__banner-price__time {
+	position: relative;
+	margin-right: 1rem;
+
+}
+.place__banner-price__time::before {
+	content: '';
+	background: var(--orange);
+	width: 2rem;
+	height: 0.3rem;
+	position: absolute;
+	transform: rotate(-65deg);
+	right: -1.8rem;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+
+}
+
+.place__title {
+	font-family: var(--font-bold);
+}
+
+.place__caption {
+
+}
+
+.place__link {
+
 }
 
 .destinations__link {
