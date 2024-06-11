@@ -49,7 +49,7 @@ a {
 	background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
 		url("../images/header-bg.jpg");
 	width: 100%;
-	min-height: 90vh;
+	min-height: 85vh;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -421,4 +421,38 @@ MAIN MENU
 
 .services__item-caption {
 	font-family: var(--font-light);
+}
+
+/*
+===============================
+			destinations
+===============================
+*/
+
+.destinations {
+	text-align: center;
+	padding: 7rem;
+	color: var(--dark);
+}
+.destinations__img {
+}
+
+.destinations__title {
+	font-family: var(--font-bold);
+	font-size: 2.5rem;
+	margin: 1rem auto 3rem auto;
+}
+
+.destinations__link {
+	color: var(--orange);
+	border: 1px solid var(--orange);
+	padding: 1rem 3rem;
+	display: block;
+	margin: 3rem auto 0 auto;
+	background: transparent;
+}
+
+.destinations__link:hover {
+	background: var(--orange);
+	color: var(--white);
 }
