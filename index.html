@@ -1,336 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camping</title>
-    <link rel="icon" type="image/png" href="./svgs/logo.svg">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/font-face.css">
-    <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-</head>
-<body dir="rtl">
-    <header class="header">
-        <div class="container header__wrapper">
-            <nav class="nav">
-                <div class="nav_right-nav">
-                    <!-- app logo -->
-                    <a class="app-logo" href="#">
-                        <img class="app-logo__img" src="./svgs/logo.svg" alt="Camping Logo">
-                    </a>
-                    <!-- main menu -->
-                    <ul class="menu">
-                        <li class="menu__item">
-                            <a class="menu__item-link menu__item-link--active" href="#">خانه</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__item-link" href="#">مقصد</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__item-link" href="#">نزدیکان من</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__item-link" href="#">رویداد ها</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__item-link" href="#">گالری</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__item-link" href="#">درباره ما</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__item-link" href="#">ارتباط با ما</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- here we create mobile menu -->
-                <div class="mobile-nav">
-                    <h2 class="mobile-nav__title">کمپ ما</h2>
-                    <ul class="mobile-menu">
-                        <li class="mobile-menu__item mobile-menu__item--active">
-                            <a class="mobile-menu__item-link" href="#">خانه</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="mobile-menu__item-link" href="#">مقصد</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="mobile-menu__item-link" href="#">نزدیکان من</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="mobile-menu__item-link" href="#">رویداد ها</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="mobile-menu__item-link" href="#">گالری</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="mobile-menu__item-link" href="#">درباره ما</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="mobile-menu__item-link" href="#">ارتباط با ما</a>
-                        </li>
-                    </ul>
-                    <div class="mobile__links">
-                        <a class="mobile__link mobile__link__right" href="#">ورود</a>
-                        <a class="mobile__link mobile__link__left" href="#">ثبت نام</a>
-                    </div>
-                </div>
-                <!-- sign in/up menu -->
-                <div class="nav__links">
-                    <a class="nav__link" href="#">ورود</a>
-                    <a class="nav__link nav__link--border" href="#">ثبت نام</a>
-                </div>
-                <!-- mobile menu button -->
-                <div class="nav__btn">
-                    <span class="nav__btn-line"></span>
-                </div>
-            </nav>
-            <div class="header-content">
-                <h1 class="header-content__title">کمپ خود را بیابید !</h1>
-                <p class="header-content__text">در کمترین زمان ممکن از بین بیشتر از 300 کمپ متفاوت ، کمپ دلخواه خود را انتخاب کنید.</p>
-                <button class="header-content__btn btn">
-                    <a class="header-content__btn__link" href="#">پیدا کن !</a>
-                </button>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="container">
-            <section class="services">
-                <div class="services__item">
-                    <img class="services__item-svg" src="./svgs/fire.svg" alt="fire">
-                    <h2 class="services__item-title">کمپینگ و استفاده روزانه</h2>
-                    <p class="services__item-caption"> مکان جدیدی را که برای شما مناسب است کشف کنید.</p>
-                </div>
-                <div class="services__item">
-                    <img class="services__item-svg" src="./svgs/tickets.svg" alt="fire">
-                    <h2 class="services__item-title">تور و بلیط</h2>
-                    <p class="services__item-caption">برای شرکت در رویدادها تور و بلیط رزرو کنید.</p>
-                </div>
-                <div class="services__item">
-                    <img class="services__item-svg" src="./svgs/paper.svg" alt="fire">
-                    <h2 class="services__item-title">مجوزها</h2>
-                    <p class="services__item-caption">برای دسترسی به مکان های پر تقاضا مجوز دریافت کنید.</p>
-                </div>
-                <div class="services__item">
-                    <img class="services__item-svg" src="./svgs/fish.svg" alt="fire">
-                    <h2 class="services__item-title">فعالیت های تفریحی</h2>
-                    <p class="services__item-caption">بهترین نقاط را برای شکار، ماهیگیری و تیراندازی تفریحی بیابید.</p>
-                </div>
-            </section>
-            <section class="destinations">
-                <img class="destinations__img" src="./svgs/destination.svg" alt="logo">
-                <h2 class="destinations__title">مقاصد و کمپ ها</h2>
-                <div class="destinations__places">
-                    <div class="place">
-                        <div class="place__banner">
-                            <img src="./images/image1.jpg" class="place__banner-img" alt="banner">
-                            <div class="place__banner-like">
-                                <img class="place__banner-like-img" src="./svgs/heart.svg" alt="like">
-                            </div>
-                            <div class="place__banner-price">
-                                <span class="place__banner-price__number">560,000</span>
-                                <span class="place__banner-price__unit">تومان</span>
-                                <span class="place__banner-price__time">شبانه</span>
-                            </div>
-                        </div>
-                        <h3 class="place__title">استوگا</h3>
-                        <div class="place__caption">تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.</div>
-                        <a class="place__link btn">اطلاعات بیشتر</a>
-                    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Camping</title>
+		<link rel="icon" type="image/png" href="./svgs/logo.svg" />
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/font-face.css" />
+		<link rel="stylesheet" href="./css/grid.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/responsive.css" />
+	</head>
+	<body dir="rtl">
+		<header class="header">
+			<div class="container header__wrapper">
+				<nav class="nav">
+					<div class="nav_right-nav">
+						<!-- app logo -->
+						<a class="app-logo" href="#">
+							<img
+								class="app-logo__img"
+								src="./svgs/logo.svg"
+								alt="Camping Logo"
+							/>
+						</a>
+						<!-- main menu -->
+						<ul class="menu">
+							<li class="menu__item">
+								<a class="menu__item-link menu__item-link--active" href="#"
+									>خانه</a
+								>
+							</li>
+							<li class="menu__item">
+								<a class="menu__item-link" href="#">مقصد</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__item-link" href="#">نزدیکان من</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__item-link" href="#">رویداد ها</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__item-link" href="#">گالری</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__item-link" href="#">درباره ما</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__item-link" href="#">ارتباط با ما</a>
+							</li>
+						</ul>
+					</div>
+					<!-- here we create mobile menu -->
+					<div class="mobile-nav">
+						<h2 class="mobile-nav__title">کمپ ما</h2>
+						<ul class="mobile-menu">
+							<li class="mobile-menu__item mobile-menu__item--active">
+								<a class="mobile-menu__item-link" href="#">خانه</a>
+							</li>
+							<li class="mobile-menu__item">
+								<a class="mobile-menu__item-link" href="#">مقصد</a>
+							</li>
+							<li class="mobile-menu__item">
+								<a class="mobile-menu__item-link" href="#">نزدیکان من</a>
+							</li>
+							<li class="mobile-menu__item">
+								<a class="mobile-menu__item-link" href="#">رویداد ها</a>
+							</li>
+							<li class="mobile-menu__item">
+								<a class="mobile-menu__item-link" href="#">گالری</a>
+							</li>
+							<li class="mobile-menu__item">
+								<a class="mobile-menu__item-link" href="#">درباره ما</a>
+							</li>
+							<li class="mobile-menu__item">
+								<a class="mobile-menu__item-link" href="#">ارتباط با ما</a>
+							</li>
+						</ul>
+						<div class="mobile__links">
+							<a class="mobile__link mobile__link__right" href="#">ورود</a>
+							<a class="mobile__link mobile__link__left" href="#">ثبت نام</a>
+						</div>
+					</div>
+					<!-- sign in/up menu -->
+					<div class="nav__links">
+						<a class="nav__link" href="#">ورود</a>
+						<a class="nav__link nav__link--border" href="#">ثبت نام</a>
+					</div>
+					<!-- mobile menu button -->
+					<div class="nav__btn">
+						<span class="nav__btn-line"></span>
+					</div>
+				</nav>
+				<div class="header-content">
+					<h1 class="header-content__title">کمپ خود را بیابید !</h1>
+					<p class="header-content__text">
+						در کمترین زمان ممکن از بین بیشتر از 300 کمپ متفاوت ، کمپ دلخواه خود
+						را انتخاب کنید.
+					</p>
+					<button class="header-content__btn btn">
+						<a class="header-content__btn__link" href="#">پیدا کن !</a>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<section class="services">
+					<div class="services__item">
+						<img class="services__item-svg" src="./svgs/fire.svg" alt="fire" />
+						<h2 class="services__item-title">کمپینگ و استفاده روزانه</h2>
+						<p class="services__item-caption">
+							مکان جدیدی را که برای شما مناسب است کشف کنید.
+						</p>
+					</div>
+					<div class="services__item">
+						<img
+							class="services__item-svg"
+							src="./svgs/tickets.svg"
+							alt="fire"
+						/>
+						<h2 class="services__item-title">تور و بلیط</h2>
+						<p class="services__item-caption">
+							برای شرکت در رویدادها تور و بلیط رزرو کنید.
+						</p>
+					</div>
+					<div class="services__item">
+						<img class="services__item-svg" src="./svgs/paper.svg" alt="fire" />
+						<h2 class="services__item-title">مجوزها</h2>
+						<p class="services__item-caption">
+							برای دسترسی به مکان های پر تقاضا مجوز دریافت کنید.
+						</p>
+					</div>
+					<div class="services__item">
+						<img class="services__item-svg" src="./svgs/fish.svg" alt="fire" />
+						<h2 class="services__item-title">فعالیت های تفریحی</h2>
+						<p class="services__item-caption">
+							بهترین نقاط را برای شکار، ماهیگیری و تیراندازی تفریحی بیابید.
+						</p>
+					</div>
+				</section>
+				<section class="destinations">
+					<img
+						class="destinations__img"
+						src="./svgs/destination.svg"
+						alt="logo"
+					/>
+					<h2 class="destinations__title">مقاصد و کمپ ها</h2>
+					<div class="destinations__places">
+						<div class="place">
+							<div class="place__banner">
+								<img
+									src="./images/image1.jpg"
+									class="place__banner-img"
+									alt="banner"
+								/>
+								<div class="place__banner-like">
+									<img
+										class="place__banner-like-img"
+										src="./svgs/heart.svg"
+										alt="like"
+									/>
+								</div>
+								<div class="place__banner-price">
+									<span class="place__banner-price__number">560,000</span>
+									<span class="place__banner-price__unit">تومان</span>
+									<span class="place__banner-price__time">شبانه</span>
+								</div>
+							</div>
+							<h3 class="place__title">استوگا</h3>
+							<div class="place__caption">
+								تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.
+							</div>
+							<a class="place__link btn">اطلاعات بیشتر</a>
+						</div>
 
-                    <div class="place">
-                        <div class="place__banner">
-                            <img src="./images/image2.jpg" class="place__banner-img" alt="banner">
-                            <div class="place__banner-like">
-                                <img class="place__banner-like-img" src="./svgs/heart.svg" alt="like">
-                            </div>
-                            <div class="place__banner-price">
-                                <span class="place__banner-price__number">500,000</span>
-                                <span class="place__banner-price__unit">تومان</span>
-                                <span class="place__banner-price__time">شبانه</span>
-                            </div>
-                        </div>
-                        <h3 class="place__title">کابین کوچک در کوه</h3>
-                        <div class="place__caption">تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.</div>
-                        <a class="place__link btn">اطلاعات بیشتر</a>
-                    </div>
+						<div class="place">
+							<div class="place__banner">
+								<img
+									src="./images/image2.jpg"
+									class="place__banner-img"
+									alt="banner"
+								/>
+								<div class="place__banner-like">
+									<img
+										class="place__banner-like-img"
+										src="./svgs/heart.svg"
+										alt="like"
+									/>
+								</div>
+								<div class="place__banner-price">
+									<span class="place__banner-price__number">500,000</span>
+									<span class="place__banner-price__unit">تومان</span>
+									<span class="place__banner-price__time">شبانه</span>
+								</div>
+							</div>
+							<h3 class="place__title">کابین کوچک در کوه</h3>
+							<div class="place__caption">
+								تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.
+							</div>
+							<a class="place__link btn">اطلاعات بیشتر</a>
+						</div>
 
-                    <div class="place">
-                        <div class="place__banner">
-                            <img src="./images/image3.jpg" class="place__banner-img" alt="banner">
-                            <div class="place__banner-like">
-                                <img class="place__banner-like-img" src="./svgs/heart.svg" alt="like">
-                            </div>
-                            <div class="place__banner-price">
-                                <span class="place__banner-price__number">500,000</span>
-                                <span class="place__banner-price__unit">تومان</span>
-                                <span class="place__banner-price__time">شبانه</span>
-                            </div>
-                        </div>
-                        <h3 class="place__title">کابین کوچک سنجاقک</h3>
-                        <div class="place__caption">تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.</div>
-                        <a class="place__link btn">اطلاعات بیشتر</a>
-                    </div>
+						<div class="place">
+							<div class="place__banner">
+								<img
+									src="./images/image3.jpg"
+									class="place__banner-img"
+									alt="banner"
+								/>
+								<div class="place__banner-like">
+									<img
+										class="place__banner-like-img"
+										src="./svgs/heart.svg"
+										alt="like"
+									/>
+								</div>
+								<div class="place__banner-price">
+									<span class="place__banner-price__number">500,000</span>
+									<span class="place__banner-price__unit">تومان</span>
+									<span class="place__banner-price__time">شبانه</span>
+								</div>
+							</div>
+							<h3 class="place__title">کابین کوچک سنجاقک</h3>
+							<div class="place__caption">
+								تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.
+							</div>
+							<a class="place__link btn">اطلاعات بیشتر</a>
+						</div>
 
-                    <div class="place">
-                        <div class="place__banner">
-                            <img src="./images/image4.jpg" class="place__banner-img" alt="banner">
-                            <div class="place__banner-like">
-                                <img class="place__banner-like-img" src="./svgs/heart.svg" alt="like">
-                            </div>
-                            <div class="place__banner-price">
-                                <span class="place__banner-price__number">500,000</span>
-                                <span class="place__banner-price__unit">تومان</span>
-                                <span class="place__banner-price__time">شبانه</span>
-                            </div>
-                        </div>
-                        <h3 class="place__title">مرتع تریک کریک</h3>
-                        <div class="place__caption">تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.</div>
-                        <a class="place__link btn">اطلاعات بیشتر</a>
-                    </div>
+						<div class="place">
+							<div class="place__banner">
+								<img
+									src="./images/image4.jpg"
+									class="place__banner-img"
+									alt="banner"
+								/>
+								<div class="place__banner-like">
+									<img
+										class="place__banner-like-img"
+										src="./svgs/heart.svg"
+										alt="like"
+									/>
+								</div>
+								<div class="place__banner-price">
+									<span class="place__banner-price__number">500,000</span>
+									<span class="place__banner-price__unit">تومان</span>
+									<span class="place__banner-price__time">شبانه</span>
+								</div>
+							</div>
+							<h3 class="place__title">مرتع تریک کریک</h3>
+							<div class="place__caption">
+								تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.
+							</div>
+							<a class="place__link btn">اطلاعات بیشتر</a>
+						</div>
 
-                    <div class="place">
-                        <div class="place__banner">
-                            <img src="./images/image5.jpg" class="place__banner-img" alt="banner">
-                            <div class="place__banner-like">
-                                <img class="place__banner-like-img" src="./svgs/heart.svg" alt="like">
-                            </div>
-                            <div class="place__banner-price">
-                                <span class="place__banner-price__number">500,000</span>
-                                <span class="place__banner-price__unit">تومان</span>
-                                <span class="place__banner-price__time">شبانه</span>
-                            </div>
-                        </div>
-                        <h3 class="place__title">کابین ارمیتاژ</h3>
-                        <div class="place__caption">تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.</div>
-                        <a class="place__link btn">اطلاعات بیشتر</a>
-                    </div>
+						<div class="place">
+							<div class="place__banner">
+								<img
+									src="./images/image5.jpg"
+									class="place__banner-img"
+									alt="banner"
+								/>
+								<div class="place__banner-like">
+									<img
+										class="place__banner-like-img"
+										src="./svgs/heart.svg"
+										alt="like"
+									/>
+								</div>
+								<div class="place__banner-price">
+									<span class="place__banner-price__number">500,000</span>
+									<span class="place__banner-price__unit">تومان</span>
+									<span class="place__banner-price__time">شبانه</span>
+								</div>
+							</div>
+							<h3 class="place__title">کابین ارمیتاژ</h3>
+							<div class="place__caption">
+								تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.
+							</div>
+							<a class="place__link btn">اطلاعات بیشتر</a>
+						</div>
 
-                    <div class="place">
-                        <div class="place__banner">
-                            <img src="./images/image6.jpg" class="place__banner-img" alt="banner">
-                            <div class="place__banner-like">
-                                <img class="place__banner-like-img" src="./svgs/heart.svg" alt="like">
-                            </div>
-                            <div class="place__banner-price">
-                                <span class="place__banner-price__number">500,000</span>
-                                <span class="place__banner-price__unit">تومان</span>
-                                <span class="place__banner-price__time">شبانه</span>
-                            </div>
-                        </div>
-                        <h3 class="place__title">کابین ارواح خویشاوند</h3>
-                        <div class="place__caption">تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.</div>
-                        <a class="place__link btn">اطلاعات بیشتر</a>
-                    </div>
+						<div class="place">
+							<div class="place__banner">
+								<img
+									src="./images/image6.jpg"
+									class="place__banner-img"
+									alt="banner"
+								/>
+								<div class="place__banner-like">
+									<img
+										class="place__banner-like-img"
+										src="./svgs/heart.svg"
+										alt="like"
+									/>
+								</div>
+								<div class="place__banner-price">
+									<span class="place__banner-price__number">500,000</span>
+									<span class="place__banner-price__unit">تومان</span>
+									<span class="place__banner-price__time">شبانه</span>
+								</div>
+							</div>
+							<h3 class="place__title">کابین ارواح خویشاوند</h3>
+							<div class="place__caption">
+								تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.
+							</div>
+							<a class="place__link btn">اطلاعات بیشتر</a>
+						</div>
 
-                    <div class="place">
-                        <div class="place__banner">
-                            <img src="./images/image7.jpg" class="place__banner-img" alt="banner">
-                            <div class="place__banner-like">
-                                <img class="place__banner-like-img" src="./svgs/heart.svg" alt="like">
-                            </div>
-                            <div class="place__banner-price">
-                                <span class="place__banner-price__number">500,000</span>
-                                <span class="place__banner-price__unit">تومان</span>
-                                <span class="place__banner-price__time">شبانه</span>
-                            </div>
-                        </div>
-                        <h3 class="place__title">کابین اجلاس سران</h3>
-                        <div class="place__caption">تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.</div>
-                        <a class="place__link btn">اطلاعات بیشتر</a>
-                    </div>
+						<div class="place">
+							<div class="place__banner">
+								<img
+									src="./images/image7.jpg"
+									class="place__banner-img"
+									alt="banner"
+								/>
+								<div class="place__banner-like">
+									<img
+										class="place__banner-like-img"
+										src="./svgs/heart.svg"
+										alt="like"
+									/>
+								</div>
+								<div class="place__banner-price">
+									<span class="place__banner-price__number">500,000</span>
+									<span class="place__banner-price__unit">تومان</span>
+									<span class="place__banner-price__time">شبانه</span>
+								</div>
+							</div>
+							<h3 class="place__title">کابین اجلاس سران</h3>
+							<div class="place__caption">
+								تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.
+							</div>
+							<a class="place__link btn">اطلاعات بیشتر</a>
+						</div>
 
-                    <div class="place">
-                        <div class="place__banner">
-                            <img src="./images/image8.jpg" class="place__banner-img" alt="banner">
-                            <div class="place__banner-like">
-                                <img class="place__banner-like-img" src="./svgs/heart.svg" alt="like">
-                            </div>
-                            <div class="place__banner-price">
-                                <span class="place__banner-price__number">500,000</span>
-                                <span class="place__banner-price__unit">تومان</span>
-                                <span class="place__banner-price__time">شبانه</span>
-                            </div>
-                        </div>
-                        <h3 class="place__title">کابین لوکس کوچک ساحلی</h3>
-                        <div class="place__caption">تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.</div>
-                        <a class="place__link btn">اطلاعات بیشتر</a>
-                    </div>
+						<div class="place">
+							<div class="place__banner">
+								<img
+									src="./images/image8.jpg"
+									class="place__banner-img"
+									alt="banner"
+								/>
+								<div class="place__banner-like">
+									<img
+										class="place__banner-like-img"
+										src="./svgs/heart.svg"
+										alt="like"
+									/>
+								</div>
+								<div class="place__banner-price">
+									<span class="place__banner-price__number">500,000</span>
+									<span class="place__banner-price__unit">تومان</span>
+									<span class="place__banner-price__time">شبانه</span>
+								</div>
+							</div>
+							<h3 class="place__title">کابین لوکس کوچک ساحلی</h3>
+							<div class="place__caption">
+								تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.
+							</div>
+							<a class="place__link btn">اطلاعات بیشتر</a>
+						</div>
 
-                    <div class="place">
-                        <div class="place__banner">
-                            <img src="./images/image9.jpg" class="place__banner-img" alt="banner">
-                            <div class="place__banner-like">
-                                <img class="place__banner-like-img" src="./svgs/heart.svg" alt="like">
-                            </div>
-                            <div class="place__banner-price">
-                                <span class="place__banner-price__number">500,000</span>
-                                <span class="place__banner-price__unit">تومان</span>
-                                <span class="place__banner-price__time">شبانه</span>
-                            </div>
-                        </div>
-                        <h3 class="place__title">نینووان در ساحل</h3>
-                        <div class="place__caption">تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.</div>
-                        <a class="place__link btn">اطلاعات بیشتر</a>
-                    </div>
+						<div class="place">
+							<div class="place__banner">
+								<img
+									src="./images/image9.jpg"
+									class="place__banner-img"
+									alt="banner"
+								/>
+								<div class="place__banner-like">
+									<img
+										class="place__banner-like-img"
+										src="./svgs/heart.svg"
+										alt="like"
+									/>
+								</div>
+								<div class="place__banner-price">
+									<span class="place__banner-price__number">500,000</span>
+									<span class="place__banner-price__unit">تومان</span>
+									<span class="place__banner-price__time">شبانه</span>
+								</div>
+							</div>
+							<h3 class="place__title">نینووان در ساحل</h3>
+							<div class="place__caption">
+								تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.
+							</div>
+							<a class="place__link btn">اطلاعات بیشتر</a>
+						</div>
 
-                    <div class="place">
-                        <div class="place__banner">
-                            <img src="./images/image10.jpg" class="place__banner-img" alt="banner">
-                            <div class="place__banner-like">
-                                <img class="place__banner-like-img" src="./svgs/heart.svg" alt="like">
-                            </div>
-                            <div class="place__banner-price">
-                                <span class="place__banner-price__number">500,000</span>
-                                <span class="place__banner-price__unit">تومان</span>
-                                <span class="place__banner-price__time">شبانه</span>
-                            </div>
-                        </div>
-                        <h3 class="place__title">چادر مرتفع جزیره مانع</h3>
-                        <div class="place__caption">تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.</div>
-                        <a class="place__link btn">اطلاعات بیشتر</a>
-                    </div>
+						<div class="place">
+							<div class="place__banner">
+								<img
+									src="./images/image10.jpg"
+									class="place__banner-img"
+									alt="banner"
+								/>
+								<div class="place__banner-like">
+									<img
+										class="place__banner-like-img"
+										src="./svgs/heart.svg"
+										alt="like"
+									/>
+								</div>
+								<div class="place__banner-price">
+									<span class="place__banner-price__number">500,000</span>
+									<span class="place__banner-price__unit">تومان</span>
+									<span class="place__banner-price__time">شبانه</span>
+								</div>
+							</div>
+							<h3 class="place__title">چادر مرتفع جزیره مانع</h3>
+							<div class="place__caption">
+								تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.
+							</div>
+							<a class="place__link btn">اطلاعات بیشتر</a>
+						</div>
 
-                    <div class="place">
-                        <div class="place__banner">
-                            <img src="./images/image11.jpg" class="place__banner-img" alt="banner">
-                            <div class="place__banner-like">
-                                <img class="place__banner-like-img" src="./svgs/heart.svg" alt="like">
-                            </div>
-                            <div class="place__banner-price">
-                                <span class="place__banner-price__number">500,000</span>
-                                <span class="place__banner-price__unit">تومان</span>
-                                <span class="place__banner-price__time">شبانه</span>
-                            </div>
-                        </div>
-                        <h3 class="place__title">خانه درختی</h3>
-                        <div class="place__caption">تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.</div>
-                        <a class="place__link btn">اطلاعات بیشتر</a>
-                    </div>
+						<div class="place">
+							<div class="place__banner">
+								<img
+									src="./images/image11.jpg"
+									class="place__banner-img"
+									alt="banner"
+								/>
+								<div class="place__banner-like">
+									<img
+										class="place__banner-like-img"
+										src="./svgs/heart.svg"
+										alt="like"
+									/>
+								</div>
+								<div class="place__banner-price">
+									<span class="place__banner-price__number">500,000</span>
+									<span class="place__banner-price__unit">تومان</span>
+									<span class="place__banner-price__time">شبانه</span>
+								</div>
+							</div>
+							<h3 class="place__title">خانه درختی</h3>
+							<div class="place__caption">
+								تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.
+							</div>
+							<a class="place__link btn">اطلاعات بیشتر</a>
+						</div>
 
-                    <div class="place">
-                        <div class="place__banner">
-                            <img src="./images/image12.jpg" class="place__banner-img" alt="banner">
-                            <div class="place__banner-like">
-                                <img class="place__banner-like-img" src="./svgs/heart.svg" alt="like">
-                            </div>
-                            <div class="place__banner-price">
-                                <span class="place__banner-price__number">500,000</span>
-                                <span class="place__banner-price__unit">تومان</span>
-                                <span class="place__banner-price__time">شبانه</span>
-                            </div>
-                        </div>
-                        <h3 class="place__title">پایه نجات غریق قرمز</h3>
-                        <div class="place__caption">تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.</div>
-                        <a class="place__link btn">اطلاعات بیشتر</a>
-                    </div>
-                </div>
-                <a class="destinations__link btn">مشاهده همه</a>
-            </section>
-        </div>
-    </main>
-    <script src="./js/script.js"></script>
-</body>
+						<div class="place">
+							<div class="place__banner">
+								<img
+									src="./images/image12.jpg"
+									class="place__banner-img"
+									alt="banner"
+								/>
+								<div class="place__banner-like">
+									<img
+										class="place__banner-like-img"
+										src="./svgs/heart.svg"
+										alt="like"
+									/>
+								</div>
+								<div class="place__banner-price">
+									<span class="place__banner-price__number">500,000</span>
+									<span class="place__banner-price__unit">تومان</span>
+									<span class="place__banner-price__time">شبانه</span>
+								</div>
+							</div>
+							<h3 class="place__title">پایه نجات غریق قرمز</h3>
+							<div class="place__caption">
+								تجربه کمپینگ منحصر به فرد را در بیش از 300000 کمپینگ رزرو کنید.
+							</div>
+							<a class="place__link btn">اطلاعات بیشتر</a>
+						</div>
+					</div>
+					<a class="destinations__link btn">مشاهده همه</a>
+				</section>
+			</div>
+		</main>
+		<section class="newsletters">
+			<div class="newsletters__context">
+				<h3 class="context__title"></h3>
+				<p class="context__caption"></p>
+				<form class="context__email">
+					<img class="email__logo" src="" alt="" />
+					<input class="email__input" />
+					<button class="email__btn" type="submit">
+						<img class="email__btn-svg" src="" alt="send" />
+					</button>
+				</form>
+			</div>
+			<img class="newsletters__img" src="" alt="" />
+		</section>
+		<script src="./js/script.js"></script>
+	</body>
 </html>
