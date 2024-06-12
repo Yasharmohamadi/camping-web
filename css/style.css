@@ -4,6 +4,7 @@
 	--grey: #d2d2d2;
 	--dark: #3b3735;
 	--app-bg: #faf4f2;
+	--app-bg-sharp: #f8e1db;
 	--font-bold: "Iran Yekan Bold";
 	--font-light: "Iran Yekan Light";
 }
@@ -566,4 +567,84 @@ MAIN MENU
 .destinations__link:hover {
 	background: var(--orange);
 	color: var(--white);
+}
+
+/*
+===============================
+			newsletters
+===============================
+*/
+
+.newsletters {
+	background: var(--app-bg-sharp);
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+	border-radius: 2rem;
+	margin-bottom: 20rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 3rem;
+	color: var(--dark);
+
+}
+
+.newsletters__context {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.context__title {
+	font-family: var(--font-bold);
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+
+.context__caption {
+	font-size: 2rem;
+	text-align: justify;
+	margin-bottom: 2rem;
+}
+
+.context__email {
+	background: var(--white);
+	padding: 1rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2rem;
+
+}
+
+.email__logo {
+	width: 3.5rem;
+	margin-right: 1rem;
+}
+
+.email__input {
+	background: transparent;
+	border: none;
+	outline: none;
+	width: 70%;
+	font-size: 2.5rem;
+	padding: 1.5rem 1rem;
+	font-family: inherit;
+	color: var(--dark);
+}
+
+.email__btn {
+	outline: none;
+	border: none;
+	padding: 1.5rem;
+	border-radius: 2rem;
+	background: var(--orange);
+	cursor: pointer;
+}
+
+.email__btn-svg {
+
+}
+
+.newsletters__img {
+	margin-right: 4rem;
 }
