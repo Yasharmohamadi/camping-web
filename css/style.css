@@ -436,7 +436,7 @@ MAIN MENU
 
 .destinations__title {
 	font-family: var(--font-bold);
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	margin: 1rem auto 3rem auto;
 }
 
@@ -452,7 +452,6 @@ MAIN MENU
 	background: var(--white);
 	border-radius: 2rem;
 	padding: 2rem;
-
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 	width: 35rem;
 	flex-grow: 1;
@@ -484,9 +483,7 @@ MAIN MENU
 	align-items: center;
 	cursor: pointer;
 }
-.place__banner-like-img {
-	
-}
+
 .place__banner-price {
 	background: var(--white);
 	position: absolute;
@@ -579,13 +576,13 @@ MAIN MENU
 	background: var(--app-bg-sharp);
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 	border-radius: 2rem;
-	margin-bottom: 20rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-direction: column;
 	padding: 2rem 3rem;
 	color: var(--dark);
-
+	margin-bottom: 20rem;
 }
 
 .newsletters__context {
@@ -596,8 +593,9 @@ MAIN MENU
 
 .context__title {
 	font-family: var(--font-bold);
-	font-size: 3rem;
+	font-size: 3.5rem;
 	margin-bottom: 2rem;
+	margin: 3rem auto 2rem auto;
 }
 
 .context__caption {
@@ -626,6 +624,7 @@ MAIN MENU
 	border: none;
 	outline: none;
 	width: 70%;
+	height: 100%;
 	font-size: 2.5rem;
 	padding: 1.5rem 1rem;
 	font-family: inherit;
@@ -639,6 +638,7 @@ MAIN MENU
 	border-radius: 2rem;
 	background: var(--orange);
 	cursor: pointer;
+	box-shadow: 0.5rem 0.5rem 2rem #e76f5198;
 }
 
 .email__btn-svg {
@@ -646,5 +646,6 @@ MAIN MENU
 }
 
 .newsletters__img {
-	margin-right: 4rem;
+	/* margin-right: 4rem; */
+	width: 100%
 }
