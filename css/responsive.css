@@ -1,9 +1,9 @@
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 380px) {
 	.header-content__title {
-		font-size: 5rem;
-		line-height: 7rem;
+		font-size: 4rem;
 	}
 }
+
 
 @media screen and (min-width: 576px) {
 }
