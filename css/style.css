@@ -581,18 +581,25 @@ MAIN MENU
 	margin-bottom: 2rem;
 }
 
-.context__email {
+.context__email-box {
+	position: relative;
 	background: var(--white);
-	padding: 1rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding: 0 1.5rem;
+	height: 8rem;
 	border-radius: 2rem;
+	margin-top: 2rem;
 }
 
+.context__email-form {
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+}
+
+
 .email__logo {
-	/* width: 3.5rem; */
-	margin-right: 1rem;
+	flex-shrink: 0;
 }
 
 .email__input {
@@ -600,8 +607,9 @@ MAIN MENU
 	border: none;
 	outline: none;
 	height: 100%;
-	font-size: 2rem;
-	padding: 1.5rem 1rem;
+	width: 100%;
+	font-size:1.6rem;
+	padding: 0 1rem;
 	font-family: inherit;
 	color: var(--dark);
 }
@@ -609,9 +617,11 @@ MAIN MENU
 .email__btn {
 	outline: none;
 	border: none;
-	padding: 1rem;
-	border-radius: 1.5rem;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 2rem;
 	background: var(--orange);
 	cursor: pointer;
 	box-shadow: 0.5rem 0.5rem 2rem #e76f5198;
+	flex-shrink: 0;
 }

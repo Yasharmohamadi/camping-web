@@ -2,6 +2,9 @@
 	.header-content__title {
 		font-size: 4rem;
 	}
+    .context__title {
+        max-width: 20rem;
+    }
 }
 
 
@@ -19,9 +22,11 @@
 	.newsletters {
 		text-align: right;
         flex-direction: row;
+        align-items: center;
 	}
 	.newsletters__context {
         flex-basis: 60%;
+        padding-right: 2rem;
 	}
 	.newsletters__img {
         flex-basis: 40%;
