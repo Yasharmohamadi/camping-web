@@ -26,28 +26,60 @@
 	}
 	.newsletters__context {
         flex-basis: 60%;
-        padding-right: 2rem;
+        padding-left: 2rem;
 	}
-	.newsletters__img {
+	.newsletters_banner {
         flex-basis: 40%;
 	}
 }
 
 @media screen and (min-width: 992px) {
-	.nav__links {
-		display: block;
+    .nav__links {
+        display: block;
 	}
 	.header-content__text {
-		max-width: 40rem;
+        max-width: 40rem;
 	}
+    .newsletters__context {
+        padding-left: 4rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    .newsletters__context {
+        flex-basis: auto;
+        width: 60rem;
+	}
+	.newsletters_banner {
+        flex-basis: auto;
+        width: 42rem;
+	}
+    .newsletters {
+        padding: 3rem 4rem;
+    }
+    .place {
+        width: 35rem;
+
+    }
 }
 
 @media screen and (min-width: 1400px) {
+
+    .newsletters_banner {
+        width: 50rem;
+    }
+    .newsletters__context {
+        flex-basis: auto;
+        width: 70rem;
+	}
+    .newsletters {
+        padding: 3rem 6rem;
+    }
 }
 @media screen and (min-width: 1600px) {
+    .newsletters {
+        padding: 3rem 9rem;
+    }
 }
 @media screen and (min-width: 1900px) {
 }
