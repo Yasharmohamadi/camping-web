@@ -376,9 +376,6 @@ MAIN MENU
 ===============================
 */
 
-.main {
-}
-
 /*
 ===============================
 			services section
@@ -440,20 +437,18 @@ MAIN MENU
 	margin: 1rem auto 3rem auto;
 }
 
-
 .destinations__places {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -1rem;
 	margin-right: -1rem;
-	
 }
 .place {
 	background: var(--white);
 	border-radius: 2rem;
 	padding: 2rem;
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-	width: 35rem;
+	width: 30rem;
 	flex-grow: 1;
 	margin-bottom: 3rem;
 	margin-right: 1rem;
@@ -462,12 +457,10 @@ MAIN MENU
 .place__banner {
 	position: relative;
 	margin-bottom: 3rem;
-	
 }
 .place__banner-img {
 	border-radius: 2rem;
 	width: 100%;
-	
 }
 .place__banner-like {
 	background: var(--white);
@@ -508,15 +501,13 @@ MAIN MENU
 .place__banner-price__unit {
 	margin-right: 0.5rem;
 	font-family: var(--font-bold);
-	
 }
 .place__banner-price__time {
 	position: relative;
 	margin-right: 2rem;
-
 }
 .place__banner-price__time::before {
-	content: '';
+	content: "";
 	background: var(--orange);
 	width: 2rem;
 	height: 0.3rem;
@@ -526,16 +517,12 @@ MAIN MENU
 	top: 0;
 	bottom: 0;
 	margin: auto 0;
-
 }
 
 .place__title {
 	font-family: var(--font-bold);
 	font-size: 2.5rem;
 	margin-bottom: 1rem;
-}
-
-.place__caption {
 }
 
 .place__link {
@@ -549,7 +536,6 @@ MAIN MENU
 .place__link:hover {
 	background: #3b37352c;
 	color: #3b373591;
-
 }
 
 .destinations__link {
@@ -573,29 +559,32 @@ MAIN MENU
 */
 
 .newsletters {
-	background: var(--app-bg-sharp);
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+	background: var(--app-bg-sharp);
 	border-radius: 2rem;
+	color: var(--dark);
+	text-align: center;
+
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	flex-direction: column;
-	padding: 2rem 3rem;
-	color: var(--dark);
-	margin-bottom: 20rem;
+	/* justify-content: space-between; */
+	flex-direction: column-reverse;
+	padding: 3rem 2rem;
+	margin: 6rem 0;
 }
 
 .newsletters__context {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+	padding-left: 2rem;
 }
 
 .context__title {
 	font-family: var(--font-bold);
 	font-size: 3.5rem;
-	margin-bottom: 2rem;
 	margin: 3rem auto 2rem auto;
+	text-align: center;
 }
 
 .context__caption {
@@ -606,16 +595,15 @@ MAIN MENU
 
 .context__email {
 	background: var(--white);
-	padding: 1rem 0;
+	padding: 1rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 2rem;
-
 }
 
 .email__logo {
-	width: 3.5rem;
+	/* width: 3.5rem; */
 	margin-right: 1rem;
 }
 
@@ -623,9 +611,8 @@ MAIN MENU
 	background: transparent;
 	border: none;
 	outline: none;
-	width: 70%;
 	height: 100%;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	padding: 1.5rem 1rem;
 	font-family: inherit;
 	color: var(--dark);
@@ -634,18 +621,9 @@ MAIN MENU
 .email__btn {
 	outline: none;
 	border: none;
-	padding: 1.5rem;
-	border-radius: 2rem;
+	padding: 1rem;
+	border-radius: 1.5rem;
 	background: var(--orange);
 	cursor: pointer;
 	box-shadow: 0.5rem 0.5rem 2rem #e76f5198;
-}
-
-.email__btn-svg {
-
-}
-
-.newsletters__img {
-	/* margin-right: 4rem; */
-	width: 100%
 }
