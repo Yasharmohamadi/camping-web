@@ -429,15 +429,14 @@ MAIN MENU
 
 .destinations__title {
 	font-family: var(--font-bold);
-	font-size: 3.5rem;
+	font-size: 3rem;
 	margin: 1rem auto 3rem auto;
 }
 
 .destinations__places {
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: -1rem;
-	margin-right: -1rem;
+	margin: 0 -1rem;
 }
 .place {
 	background: var(--white);
@@ -446,17 +445,17 @@ MAIN MENU
 	box-shadow: var(--box-shadow);
 	width: 30rem;
 	flex-grow: 1;
-	margin-bottom: 3rem;
-	margin-right: 1rem;
-	margin-left: 1rem;
+	margin: 0 1rem 2rem 1rem;
 }
 .place__banner {
 	position: relative;
-	margin-bottom: 3rem;
+	height: 18rem;
 }
 .place__banner-img {
 	border-radius: 2rem;
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 .place__banner-like {
 	background: var(--white);
@@ -476,19 +475,17 @@ MAIN MENU
 .place__banner-price {
 	background: var(--white);
 	position: absolute;
-	bottom: -0.5rem;
+	bottom: -1.5rem;
 	right: 0;
 	left: 0;
-	/* border: 1px solid #000; */
 	width: 20rem;
-	height: 3.5rem;
-	padding-bottom: 2px;
+	padding: 0.3rem;
 	border-radius: 1rem;
 	margin: 0 auto;
-	padding: 2rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	color: var(--dark);
 }
 .place__banner-price__number {
 	font-family: var(--font-bold);
@@ -501,6 +498,7 @@ MAIN MENU
 .place__banner-price__time {
 	position: relative;
 	margin-right: 2rem;
+	color: var(--orange);
 }
 .place__banner-price__time::before {
 	content: "";
@@ -518,15 +516,14 @@ MAIN MENU
 .place__title {
 	font-family: var(--font-bold);
 	font-size: 2.5rem;
-	margin-bottom: 1rem;
+	margin: 3rem 0 0.2rem 0;
 }
 
 .place__link {
 	background: #3b37350f;
-	display: block;
-	margin: 3.5rem auto 0 auto;
+	margin-top: 3rem;
 	padding: 1rem;
-	color: #3b373590;
+	color: #3b37357c;
 }
 
 .place__link:hover {
@@ -537,9 +534,7 @@ MAIN MENU
 .destinations__link {
 	color: var(--orange);
 	border: 1px solid var(--orange);
-	padding: 1rem 3rem;
-	display: block;
-	margin: 3rem auto 0 auto;
+	margin-top: 3rem;
 	background: transparent;
 }
 
@@ -560,27 +555,24 @@ MAIN MENU
 	border-radius: 2rem;
 	color: var(--dark);
 	text-align: center;
-
-	display: flex;
-	align-items: center;
-	/* justify-content: space-between; */
-	flex-direction: column-reverse;
 	padding: 3rem 2rem;
+	display: flex;
+	flex-direction: column-reverse;
 	margin: 6rem 0;
 }
 
-.newsletters__context {
+/* .newsletters__context {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 	padding-left: 2rem;
-}
+} */
 
 .context__title {
 	font-family: var(--font-bold);
 	font-size: 3.5rem;
-	margin: 3rem auto 2rem auto;
-	text-align: center;
+	margin: 2rem auto;
+	/* text-align: center; */
 }
 
 .context__caption {
