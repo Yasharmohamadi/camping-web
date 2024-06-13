@@ -635,3 +635,18 @@ MAIN MENU
 ===============================
 */
 
+.footer {
+	background: var(--app-bg-sharp);
+	width: 100%;
+	border-radius: 10rem 10rem 0 0;
+	color: var(--dark);
+}
+
+.footer-title {
+	font-family: var(--font-bold);
+	font-size: 2rem;
+}
+
+.footer-wrapper {
+	display: flex;
+}
