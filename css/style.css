@@ -13,6 +13,8 @@
 html {
 	box-sizing: border-box;
 	font-size: 62.5%; /* 10px */
+	scroll-behavior: smooth;
+
 }
 
 *,
@@ -638,10 +640,15 @@ footer
 	width: 100%;
 	border-radius: 10rem 10rem 0 0;
 	color: var(--dark);
-	padding:8rem 0 2rem 0;
+	/* padding: 8rem 0 2rem 0; */
+	padding-bottom: 4rem;
 }
 
-.footer-wrapper {
+.footer > .container {
+	padding-top: 10rem;
+}
+
+.footer__wrapper {
 	display: flex;
 	justify-content: space-between;
 }
@@ -656,6 +663,19 @@ footer
 	text-align: center;
 	font-size: 1.4rem;
 	margin-top: 2rem;
+}
+
+.footer__scroll {
+	width: 5rem;
+	height: 5rem;
+	background: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+	position: absolute;
+	left: 0;
+	top: -2.5rem;
 }
 /*
 ===============================
