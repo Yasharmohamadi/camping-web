@@ -629,7 +629,7 @@ MAIN MENU
 
 /*
 ===============================
-			footer
+footer
 ===============================
 */
 
@@ -638,7 +638,7 @@ MAIN MENU
 	width: 100%;
 	border-radius: 10rem 10rem 0 0;
 	color: var(--dark);
-	padding: 10rem 0 6rem 0;
+	padding:8rem 0 2rem 0;
 }
 
 .footer-wrapper {
@@ -651,9 +651,15 @@ MAIN MENU
 	font-size: 2.2rem;
 	margin-bottom: 1rem;
 }
+
+.footer__copy-right {
+	text-align: center;
+	font-size: 1.4rem;
+	margin-top: 2rem;
+}
 /*
 ===============================
-			footer right
+footer right
 ===============================
 */
 .footer-right {
@@ -663,8 +669,6 @@ MAIN MENU
 .footer-content {
 	margin-bottom: 2rem;
 }
-
-
 
 /*
 ===============================
@@ -678,9 +682,6 @@ footer left
 .footer-list__item {
 	width: 18rem;
 }
-
-
-
 
 .footer-list__item-link {
 	color: var(--dark);
