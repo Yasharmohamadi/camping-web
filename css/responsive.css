@@ -11,6 +11,15 @@
     .footer {
         text-align: center;
     }
+    .footer-left {
+        justify-content: center;
+    }
+    .footer-right {
+        margin-left: 0;
+    }
+    .footer-aboutus, .footer-plan, .footer-help, .footer-list {
+        width: 100%;
+    }
 }
 
 
