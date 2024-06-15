@@ -7,6 +7,12 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .footer {
+        text-align: center;
+    }
+}
+
 
 @media screen and (min-width: 576px) {
 }
@@ -43,6 +49,15 @@
     .newsletters__context {
         padding-left: 4rem;
     }
+    .footer__wrapper {
+        display: flex;
+    }
+    .footer-right {
+        width: 40rem;
+    }
+    .footer__scroll {
+		right: auto;
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -61,6 +76,9 @@
         width: 35rem;
 
     }
+    .footer-right {
+        width: 50rem;
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -75,11 +93,18 @@
     .newsletters {
         padding: 3rem 6rem;
     }
+    .footer-right {
+        width: 100rem;
+    }
 }
 @media screen and (min-width: 1600px) {
     .newsletters {
         padding: 3rem 9rem;
     }
+
 }
 @media screen and (min-width: 1900px) {
+    .footer-list {
+        width: 20rem;
+    }
 }

@@ -14,7 +14,6 @@ html {
 	box-sizing: border-box;
 	font-size: 62.5%; /* 10px */
 	scroll-behavior: smooth;
-
 }
 
 *,
@@ -102,7 +101,7 @@ MAIN MENU
 }
 
 .menu__item {
-	margin-left: 0.5rem;
+	margin-left: 1rem;
 }
 
 .menu__item:hover > .menu__item-link {
@@ -122,12 +121,12 @@ MAIN MENU
 .menu__item-link--active::before {
 	content: "";
 	position: absolute;
-	top: 1.5rem;
+	top: 1rem;
 	right: 0;
 	left: 0;
 	margin: 0 auto;
 	z-index: -1;
-	width: 4rem;
+	width: 3rem;
 	height: 0.3rem;
 	background: var(--orange);
 	border-radius: 10rem;
@@ -649,8 +648,9 @@ footer
 }
 
 .footer__wrapper {
-	display: flex;
+	/* display: flex; */
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .footer-title {
@@ -675,8 +675,12 @@ footer
 	border-radius: 2rem;
 	position: absolute;
 	left: 0;
+	right: 0;
 	top: -2.5rem;
+	margin: 0 auto;
+	box-shadow: var(--box-shadow);
 }
+
 /*
 ===============================
 footer right
@@ -684,6 +688,7 @@ footer right
 */
 .footer-right {
 	max-width: 80rem;
+	margin-left: 3rem;
 }
 
 .footer-content {
@@ -697,10 +702,13 @@ footer left
 */
 .footer-left {
 	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 2rem;
 }
 
-.footer-list__item {
-	width: 18rem;
+.footer-list {
+	margin-bottom: 1rem;
+	width: 16rem;
 }
 
 .footer-list__item-link {
