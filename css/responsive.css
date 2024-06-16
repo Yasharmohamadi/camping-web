@@ -27,13 +27,7 @@
 }
 
 @media screen and (min-width: 768px) {
-	.nav__btn,
-	.mobile-nav {
-		display: none;
-	}
-	.menu {
-		display: flex;
-	}
+
 	.newsletters {
 		text-align: right;
         flex-direction: row;
@@ -49,6 +43,13 @@
 }
 
 @media screen and (min-width: 992px) {
+    .nav__btn,
+	.mobile-nav {
+		display: none;
+	}
+	.menu {
+		display: flex;
+	}
     .nav__links {
         display: block;
 	}
