@@ -53,7 +53,7 @@ a {
 /* app style */
 .header {
 	background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
-		url("../images/header-bg.jpg");
+		url("../images/header-bg-min.jpg");
 	min-height: 70rem;
 	background-position: center;
 	background-size: cover;
@@ -589,7 +589,8 @@ MAIN MENU
 }
 
 .email__logo {
-	flex-shrink: 0;
+	width: 3.5rem;
+	height: 3.5rem;
 }
 
 .email__input {
