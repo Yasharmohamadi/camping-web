@@ -35,9 +35,15 @@
 }
 
 @media screen and (min-width: 576px) {
+	.container {
+		width: 54rem;
+	}
 }
 
 @media screen and (min-width: 768px) {
+	.container {
+		width: 72rem;
+	}
 	.newsletters {
 		text-align: right;
 		-webkit-box-orient: horizontal;
@@ -60,6 +66,9 @@
 }
 
 @media screen and (min-width: 992px) {
+	.container {
+		width: 96rem;
+	}
 	.nav__btn,
 	.mobile-nav {
 		display: none;
@@ -93,6 +102,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+	.container {
+		width: 114rem;
+	}
 	.newsletters__context {
 		-ms-flex-preferred-size: auto;
 		flex-basis: auto;
@@ -115,6 +127,9 @@
 }
 
 @media screen and (min-width: 1400px) {
+	.container {
+		width: 137rem;
+	}
 	.newsletters_banner {
 		width: 50rem;
 	}
@@ -131,11 +146,17 @@
 	}
 }
 @media screen and (min-width: 1600px) {
+	.container {
+		width: 157rem;
+	}
 	.newsletters {
 		padding: 3rem 9rem;
 	}
 }
 @media screen and (min-width: 1900px) {
+	.container {
+		width: 170rem;
+	}
 	.footer-list {
 		width: 20rem;
 	}
